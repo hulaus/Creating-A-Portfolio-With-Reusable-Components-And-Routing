@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Profile from './pages/Profile';
 import React from 'react';
+import Projects from './pages/Projects';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       path='/'
       element = { < Profile
       userName= 'Hulaus' />} />
+      <Route path='/projects' 
+      element={<Projects userName='Hulaus' />} />
      </Routes>
       </BrowserRouter>
     </div>
